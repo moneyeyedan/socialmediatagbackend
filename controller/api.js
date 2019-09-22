@@ -32,7 +32,7 @@ app.post('/image',(req,res)=>{
     })
 });
 app.get('/listofimage',(req,res)=>{
-    let sql2 = "select * from imagelist"
+    let sql2 = "select * from imagelist order by id desc";
     database.mysqlConnection.query(sql2,(err,result)=>{
         if(err) throw err;
         let i =0;
