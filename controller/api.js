@@ -46,7 +46,6 @@ app.get('/listofimage',(req,res)=>{
                 resolve(result);
             }
         }).then(data=>{
-            console.log(data);
             res.send(data);
         })
     });
